@@ -3,6 +3,7 @@
 # author: Ondrej Sika, http://ondrejsika.com, ondrej@ondrejsika.com
 # source: https://github.com/sikaondrej/shell-please
 
+trap '' 2
 while true
 do
     echo -n "$USER@`cat /etc/hostname`:`pwd`$ "
@@ -14,3 +15,4 @@ do
         echo "must type '$input please'"
     fi
 done
+trap 2
